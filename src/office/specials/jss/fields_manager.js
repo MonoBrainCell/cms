@@ -7,20 +7,6 @@ var patterns={
 		'errorDesc':"Используйте только Кириллические символы, без синтаксических символов"
 	}
 };
-// function checkPattern(elemForChecking,pattern){
-	// if (patterns[pattern]['type']=="exception"){
-		// if (elemForChecking.match(patternsArray[pattern]['pattern'])==1){
-			// return patternsArray[$pattern]['errorDesc'];}
-		// else{
-			// return false;}
-	// }
-	// else if (patterns[pattern]['type']=="rule"){
-		// if (elemForChecking.match(patternsArray[pattern]['pattern'])==0){
-			// return patternsArray[pattern]['errorDesc'];}
-		// else{
-			// return false;}
-	// }
-// }
 function checkAndViewErrors(elemName,patternsObject){
 	var colorOfAlert="#a00";
 	var text=$("[name='"+elemName+"']").val();
