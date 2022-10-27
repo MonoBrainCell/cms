@@ -91,6 +91,51 @@
     </li>
     <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office" target="_blank">office/</a> - папка, с админ. частью CMS
         <ul>
-            <li></li>
+            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/enter.php" target="_blank">enter.php</a> - php-файл, отвечающий за функционал авторизации в админ.части(страница+обработка данных)</li>
+             <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/execAjaxRqst.php" target="_blank">execAjaxRqst.php</a> - php-файл, работающий как обработчик всех ajax-запросов, выполненных в рамках админ. части CMS</li>
+             <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/index.php" target="_blank">index.php</a> - основной генератор страниц всех разделов админ. части CMS</li>
+             <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/index.php" target="_blank">index.php</a> - основной генератор страниц всех разделов админ. части CMS</li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/adminTemplate" target="_blank">adminTemplate/</a> - папка с темой для отображения страниц админ. части
+                <ul>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/adminTemplate/main_dummy.html" target="_blank">main_dummy.html</a> - файл с базовой разметкой страниц админ. части</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/adminTemplate/htmlDummyes" target="_blank">htmlDummyes/</a> - папка с частями разметки страниц админ. части
+                        <ul>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/adminTemplate/htmlDummyes/admin_navigation.fbd.tpl" target="_blank">admin_navigation.fbd.tpl</a> - файл с навигацией по админ. части, отображающаяся на всех страницах кроме стартовой</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/adminTemplate/style" target="_blank">style/</a> - папка с настройками оформления админ. части</li>
+                </ul>
+             </li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/functional_departments" target="_blank">functional_departments/</a> - папка содержащая редакторы для отдельных элементов функционала CMS(управление контентом страниц, реклама, новости и т.п.)
+                <ul>
+                     <li><strong>имя_папки</strong> - папка, содержащая элементы управления определённым функционалом CMS
+                        <ul>
+                            <li><strong>имя.php</strong> - файл отвечающий за отображаение страниц, предоствляющих возможность управления отдельными элементами функционала</li>
+                            <li><strong>augmentation/</strong> - папка, содержащая php-файлы, используемые при формировании страниц отдельных "ветвей" управления отдельным функционалом, а также при обработке отдельных ajax-запросов по сохранению внесённых изменений</li>
+                            <li><strong>design/</strong> - папка, содержащая настройки отображения страниц отдельных "ветвей" управления отдельным функционалом</li>
+                            <li><strong>dummyes/</strong> - папка, содержащая фрагменты разметки, используемые для отображения управляющих элементов на отдельных страницах "ветвей" управления функционалом</li>
+                            <li><strong>executors/</strong> - папка, содержащая файлы, исполняемые в результате ajax-запросов, при сохранении измений связанных с отдельным функционалом CMS</li>
+                            <li><strong>ramification/</strong> - папка, содержащая файлы, исполняемые при формировании страниц отдельных "ветвей" управления отдельным функционалом</li>
+                            <li><strong>settings/</strong> - папка, содержащая файлы, хранящие информацию о том, как должна быть сформирована страница отдельной "ветви" управления отдельным функционалом</li>
+                        </ul>
+                    </li>
+                    <li>...</li>
+                </ul>
+             </li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/gatekeeper" target="_blank">gatekeeper/</a> - папка содержащая файлы, используемые в процессе проверки доступа пользователей админ. части CMS
+                <ul>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/gatekeeper/abcqwerty.fbd.dat" target="_blank">abcqwerty.fbd.dat</a> - файл, содержащий ключ шифрования для проверки данных передаваемых при помощи сессии</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/gatekeeper/genNewKey.php" target="_blank">genNewKey.php</a> - файл, генерирующий случайный пароль</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/gatekeeper/users.fbd.xml" target="_blank">users.fbd.xml</a> - файл, хранящий информацию о зарегистрированных пользователях админ. части CMS, уровне их доступа и ограничениях, соответствующих различным уровням доступа</li>
+                </ul>
+             </li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/information_base" target="_blank">information_base/</a> - папка содержащая файлы с различной доп. информацией для админ. части CMS
+                <ul>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/information_base/domain.txt" target="_blank">domain.txt</a> - файл, хранящий текущее доменное имя сайта (в случае его смены произойдёт автоматическое исправление содержания карты сайта и самого этого файла, с учётом нового домена)</li>
+                </ul>
+            </li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/jq_libs" target="_blank">jq_libs/</a> - папка содержащая, используемую в админ. части библиотеку jQuery</li>
+             <li><a href="#" target="_blank">.../</a> - ...</li>
         </ul>
+    </li>
 </ul>
