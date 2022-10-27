@@ -1,0 +1,41 @@
+ #content .navigation_row {
+	position: relative; overflow: hidden;
+	width: 864px;
+	margin:15px auto 0px; padding:2px 2px;
+}
+#content .navigation_row:first-child {margin-top:0px;}
+#content .navigation_row a{
+	display: block;position:relative; float: left;
+	width:150px; height:auto;
+	margin:0px 0px 0px 86px; padding:150px 0px 0px;
+	text-align: center;
+	text-decoration: none;
+	color: #783c00;
+	font:italic 18px Verdana, Arial, Helvetica, sans-serif;
+	border: none;
+	background-position: top center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+#content .navigation_row a:hover {
+	outline: 1px dotted #66a;
+	color:#006;
+}
+#content .navigation_row a:first-child {margin-left:0px;}
+
+.menu1 {background-image:url(../../startPage/design/images/menu1.png);}
+.menu2 {background-image:url(../../startPage/design/images/menu2.png);}
+.menu3 {background-image:url(../../startPage/design/images/menu3.png);}
+.menu4 {background-image:url(../../startPage/design/images/menu4.png);}
+.menu5 {background-image:url(../../startPage/design/images/menu5.png);}
+.menu6 {background-image:url(../../startPage/design/images/menu6.png);}
+.menu7 {background-image:url(../../startPage/design/images/menu7.png);}
+.menu8 {background-image:url(../../startPage/design/images/menu8.png);}
+.menu9 {background-image:url(../../startPage/design/images/menu9.png);}
+.menu10 {background-image:url(../../startPage/design/images/menu10.png);}
+.menu11 {background-image:url(../../startPage/design/images/menu11.png);}
+.menu12 {background-image:url(../../startPage/design/images/menu12.png);}
+.menu13 {background-image:url(../../startPage/design/images/menu13.png);}
+.menu14 {background-image:url(../../startPage/design/images/menu14.png);}
+.menu15 {background-image:url(../../startPage/design/images/menu15.png);}
+.menu16 {background-image:url(../../startPage/design/images/menu16.png);}

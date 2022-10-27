@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Description" content="{_DESCRIPTION_}">
+<meta name="Keywords" content="{_KEYWORDS_}">
+<title>{_TITLE_}</title>
+{_BASE_TAG_}
+<link href="design/selfCMS/css/style.css" type="text/css" rel="stylesheet">
+<script type='text/javascript' src='jq_libs/jquery-3.2.1.min.js'></script>
+<script type='text/javascript' src='jq_libs/alert_resize.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".folder_name").click(function(){
+		if ($(this).next(".folder_conteiner").css("display")!="none"){
+			$(this).next(".folder_conteiner").css("display","none");
+			if ($(this).parent().hasClass("second_floor_folder")===true && $(this).parent().hasClass("special_navigation_class")===true) {
+				$(this).parent().removeClass("special_navigation_class");
+			}
+			if ($(this).next(".folder_conteiner").find(".folder_conteiner").size()!==0){
+				$(this).next(".folder_conteiner").find(".folder_conteiner").each(function(index,elem){
+					if ($(elem).css("display")!="none"){
+						$(elem).css("display","none");
+					}
+				});
+			}
+		}
+		else {
+			if ($(this).parent().hasClass("second_floor_folder")===true){
+				$(this).parent(".second_floor_folder").siblings(".second_floor_folder").each(function(index, elem){
+					if ($(elem).children(".folder_conteiner").css("display")!="none"){
+						$(elem).children(".folder_name").trigger('click');
+					}
+				});
+			}
+			$(this).next(".folder_conteiner").css("display","inline-block");	
+			if ($(this).parent().hasClass("second_floor_folder")===true){
+				$(this).parent().addClass("special_navigation_class");
+			}
+		}
+	});
+});
+</script>
+{_HEAD_STRING_}
+</head>
+<body>
+<div id="header_block">
+<div id="header">
+<a href="/" id="logo"><img src="files/media/images/logo.png" alt=""></a>
+{_MAIN_NAVIGATION_}
+<p class="clear_floats"></p>
+</div>
+</div>
+<div id="main_block">
+       
+<div id="content_block">
+{_PATH_CONTENT_}
+<h1>{_HEADER_1_}</h1>
+{_CONTENT_}
+</div>
+<div id="left_col">
+<span class="decoration_header"></span>
+{_ADVANCED_NAVIGATION_}
+{_ADVERTISEMENT_}
+<span class="bottom_border">&nbsp;</span>
+</div>
+
+</div>
+<div id="footer_block">
+<div id="footer">
+<p id="owner">&copy; <a href="#">GreymanWeb</a></p>
+<p id="developer">Development&nbsp;&amp;&nbsp;Design by <a href="#">GreymanWeb</a></p>
+</div>
+</div>
+</body>
+</html>

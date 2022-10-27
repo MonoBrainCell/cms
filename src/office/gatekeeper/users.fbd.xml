@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <settings>
+    <sa limit="1" removed="0" reassignable="0"/>
+    <a limit="3" removed="1" reassignable="1"/>
+    <v limit="1" removed="1" reassignable="1"/>
+  </settings>
+  <users>
+    <user login="trustee" type="sa" password="cf0f3f4E16e6fa2F8368c6441f58f8b16aa10fcB5ee0f"/>
+    <user login="contentadm1" type="a" password="cf0f3f4D16e6fa2D8368c6411f58f8bE6aa10fcC5ee0f"/>
+    
+    <user login="contentadm3" type="a" password="cf0f3f4416e6fa228368c64E1f58f8b76aa10fc55ee0f"/>
+    <user login="viewer" type="v" password="40b4f25Ab1fd9565b576d88C0db2b41E182e044E4bd1d"/>
+  </users>
+  <restrictions>
+    <exe name="contentSave.php" dep="ad" permission="1"/>
+    <exe name="replaceBanner.php" dep="ad" permission="1"/>
+    <exe name="saveTune.php" dep="ad" permission="2"/>
+    <exe name="contentSave.php" dep="contentEdit" permission="1"/>
+    <exe name="deletePage.php" dep="contentEdit" permission="1"/>
+    <exe name="contentSave.php" dep="costEngine" permission="2"/>
+    <exe name="contentSave.php" dep="design" permission="2"/>
+    <exe name="selectedDesignSave.php" dep="design" permission="2"/>
+    <exe name="contentSave.php" dep="feedback" permission="2"/>
+    <exe name="deletePage.php" dep="filesShare" permission="1"/>
+    <exe name="saveFilesList.php" dep="filesShare" permission="1"/>
+    <exe name="saveTune.php" dep="filesShare" permission="2"/>
+    <exe name="deletePage.php" dep="imagesGallery" permission="1"/>
+    <exe name="saveGallery.php" dep="imagesGallery" permission="1"/>
+    <exe name="saveTune.php" dep="imagesGallery" permission="2"/>
+    <page name="filesManager.php" dep="loadFiles" permission="1"/>
+    <exe name="checkFilesOnSite.php" dep="loadFiles" permission="1"/>
+    <exe name="relinkPage.php" dep="navigation" permission="1"/>
+    <exe name="replacePage.php" dep="navigation" permission="1"/>
+    <exe name="textRedact.php" dep="navigation" permission="1"/>
+    <exe name="saveTune.php" dep="navigation" permission="2"/>
+    <exe name="contentSave.php" dep="news" permission="1"/>
+    <exe name="deletePage.php" dep="news" permission="1"/>
+    <exe name="saveTune.php" dep="news" permission="2"/>
+    <main name="settingsManager.php" dep="settings" permission="1"/>
+    <page name="redactLogin.php" dep="settings" permission="2"/>
+    <page name="changePassword.php" dep="settings" permission="2"/>
+    <page name="siteFunctionalManager.php" dep="settings" permission="2"/>
+    <exe name="rewriteSitemap.php" dep="settings" permission="2"/>
+    <exe name="saveEnclaveStatus.php" dep="settings" permission="2"/>
+    <exe name="saveLogin.php" dep="settings" permission="2"/>
+    <exe name="saveNativeFuncStatus.php" dep="settings" permission="2"/>
+    <exe name="savePassword.php" dep="settings" permission="2"/>
+    <exe name="saveSiteEngineStatus.php" dep="settings" permission="2"/>
+    <exe name="contentSave.php" dep="videoGallery" permission="1"/>
+    <exe name="deletePage.php" dep="videoGallery" permission="1"/>
+    <exe name="saveTune.php" dep="videoGallery" permission="2"/>
+    <exe name="contentSave.php" dep="widgets" permission="2"/>
+    <exe name="deleteWidget.php" dep="widgets" permission="2"/>
+    <exe name="saveTune.php" dep="widgets" permission="2"/>
+  </restrictions>
+</data>

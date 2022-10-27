@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0; padding:0;
+	background: #fff url(images/bg.jpg) center top repeat-y fixed;
+}
+#header {
+	display: block; overflow: hidden;
+	width: 900px; height:73px;
+	margin:0px auto; padding:0px;
+	border:none;
+	background: transparent url(images/header.png) center top no-repeat;
+}
+
+#content {
+	display: block; position: relative;
+	width: 880px; min-height: 700px;
+	margin:0px auto; padding: 10px;
+	border-bottom: 2px groove #ddd;
+	border-radius: 20px;
+	background: transparent url(images/cont_bg.png) left top repeat;
+}
+#content_header {
+	position: relative; overflow: hidden;
+	width: 880px;
+	margin:0px auto; padding:0px;
+}
+#navigation {
+	display: block;
+	margin: 20px 0px 0px;
+	text-align: left;
+}
+#navigation a {
+	display: inline-block;
+	margin: 0px 0px 0px 45px; padding:0px 0px 2px 0px;
+	color: #00174c;
+	font: 16px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	border-bottom: 1px dotted #00174c;
+}
+#navigation a:hover {
+	color: #000;
+	padding-bottom:3px;
+	border:none;
+}
+#navigation a:first-child {
+	margin-left:0px;
+}
+#cms_id {
+	position: relative;display: inline-block; float: right;
+	margin:0px; padding:0px;
+	color: #000;
+	font:600 16px Verdana, Arial, Helvetica, sans-serif;
+}
+#content .navigation_row {
+	position: relative; overflow: hidden;
+	width: 864px;
+	margin:15px auto 0px; padding:2px 2px;
+}
+#content .navigation_row:first-child {margin-top:0px;}
+#content .navigation_row a{
+	display: block;position:relative; float: left;
+	width:150px; height:auto;
+	margin:0px 0px 0px 86px; padding:150px 0px 0px;
+	text-align: center;
+	text-decoration: none;
+	color: #783c00;
+	font:italic 18px Verdana, Arial, Helvetica, sans-serif;
+	border: none;
+	background-position: top center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+#content .navigation_row a:hover {
+	outline: 1px dotted #66a;
+	color:#006;
+}
+#content .navigation_row a:first-child {margin-left:0px;}
+
+.menu1 {background-image:url(images/menu1.png);}
+.menu2 {background-image:url(images/menu2.png);}
+.menu3 {background-image:url(images/menu3.png);}
+.menu4 {background-image:url(images/menu4.png);}
+.menu5 {background-image:url(images/menu5.png);}
+.menu6 {background-image:url(images/menu6.png);}
+.menu7 {background-image:url(images/menu7.png);}
+.menu8 {background-image:url(images/menu8.png);}
+.menu9 {background-image:url(images/menu9.png);}
+.menu10 {background-image:url(images/menu10.png);}
+.menu11 {background-image:url(images/menu11.png);}
+.menu12 {background-image:url(images/menu12.png);}
+.menu13 {background-image:url(images/menu13.png);}
+.menu14 {background-image:url(images/menu14.png);}
+.menu15 {background-image:url(images/menu15.png);}
+.menu16 {background-image:url(images/menu16.png);}

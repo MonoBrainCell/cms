@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directories>
+	<group name="Общие изображения">
+		<dir path="../files/media/images/" name="Изображения" access="1" />
+	</group>
+	<group name="Реклама на сайте">
+		<dir path="../files/media/banners/images/" name="Статические баннеры (Изображения)" access="1" />
+		<dir path="../files/media/banners/flashes/" name="Динамические баннеры (Анимация)" access="1" />
+	</group>
+	<group name="Галереи изображений">
+		<dir path="../files/media/images_gallery/original/" name="Исходные изображения (будут отображаться при изображению-обложке)" access="1" />
+		<dir path="../files/media/images_gallery/preview/" name="Preview-изображения (изображения обложки)" access="1" />
+		<dir path="../functional/imagesGallery/css/" name="css-файлы для адекватного отображения галереи изображений" access="2" />
+		<dir path="../functional/imagesGallery/javascript/" name="javascript-файлы для адекватного отображения галереи изображений" access="2" />
+	</group>
+	<group name="Файлы для скачивания">
+		<dir path="../files/share/" name="Файлы, которые можно будет в дальнейшем скачать" access="1" />
+		<dir path="../functional/filesShare/css/" name="css-файлы для адекватного отображения галереи изображений" access="2" />
+		<dir path="../functional/filesShare/javascript/" name="javascript-файлы для адекватного отображения списка файлов для скачивания" access="2" />
+	</group>
+	<group name="Виджеты">
+		<dir path="../functional/widgets/css/" name="css-файлы для адекватного отображения виджетов" access="2" />
+		<dir path="../functional/widgets/javascript/" name="javascript-файлы для адекватного отображения виджетов" access="2" />
+	</group>
+	<group name="Видео-вставки">
+		<dir path="../functional/videoGallery/css/" name="css-файлы для адекватного отображения видео-вставок" access="2" />
+		<dir path="../functional/videoGallery/javascript/" name="javascript-файлы для адекватного отображения видео-вставок" access="2" />
+	</group>
+	<group name="Обратная связь">
+		<dir path="../functional/feedback/css/" name="css-файлы для адекватного отображения и работы формы обратной связи" access="2" />
+		<dir path="../functional/feedback/javascript/" name="javascript-файлы для адекватного отображения и работы формы обратной связи" access="2" />
+		<dir path="../functional/feedback/php/" name="php-файлы для адекватной обработки данных полученных из формы обратной связи" access="2" />
+	</group>
+	<group name="Калькулятор стоимости">
+		<dir path="../functional/costEngine/css/" name="css-файлы для адекватного отображения и работы он-лайн калькулятора стоимости" access="2" />
+		<dir path="../functional/costEngine/javascript/" name="javascript-файлы для адекватного отображения и работы он-лайн калькулятора стоимости" access="2" />
+		<dir path="../functional/costEngine/php/" name="php-файлы для адекватной обработки данных полученных из калькулятора стоимости" access="2" />
+	</group>
+	<group name="Новости">
+		<dir path="../functional/news/css/" name="css-файлы для адекватного отображения новостей на сайте" access="2" />
+		<dir path="../functional/news/javascript/" name="javascript-файлы для адекватного отображения новостей на сайте" access="2" />
+	</group>
+	<group name="Гостевая книга">
+		<dir path="../functional/guestbook/css/" name="css-файлы для адекватного отображения гостевой книги сайта" access="2" />
+		<dir path="../functional/guestbook/javascript/" name="javascript-файлы для адекватного отображения гостевой книги сайта" access="2" />
+		<dir path="../functional/guestbook/php/" name="php-файлы для адекватной обработки данных добавленных в гостевую книгу" access="2" />
+	</group>
+</directories>

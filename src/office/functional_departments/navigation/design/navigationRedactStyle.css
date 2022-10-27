@@ -1,0 +1,233 @@
+.navigation_row {
+	display: block; overflow: hidden;
+	width: auto; 
+	margin:5px auto; padding:8px 5px 8px 2px;
+	font-size: 16px;
+	border:2px groove #009;
+	border-right: none;
+	background: transparent url(../../contentEdit/design/images/cont_bg.png) left top repeat;
+}
+.navigation_row#page_number_main, .navigation_row#page_number_advanced {margin-left:-7px;}
+.navigation_row .navigation_row { display: none; padding-left: 10px;}
+.navigation_row:hover {background-color: #9f9; border-color: #ff0;}
+.navigation_row a {color: #000;}
+.navigation_row a:hover {text-decoration: none;}
+.slide_down_childrens, .slide_up_childrens, .managment_icon, .insert_after_icon, .insert_before_icon, .link_to_icon {
+	display: inline-block;
+	width: 20px; height: 20px;
+	margin:0; padding:0;
+	outline: 2px outset #009;
+	vertical-align: middle;
+	background: transparent url(images/slide_down_button.png) center center no-repeat;
+	cursor: pointer;
+}
+.slide_up_childrens {background: transparent url(images/slide_up_button.png) center center no-repeat;}
+.managment_icon {background: transparent url(images/context_menu_button.png) center center no-repeat;}
+.insert_after_icon {background: transparent url(images/insert_after_button.png) center center no-repeat;}
+.insert_before_icon {background: transparent url(images/insert_before_button.png) center center no-repeat;}
+.link_to_icon {background: transparent url(images/link_button.png) center center no-repeat;}
+.slide_down_childrens:hover, .slide_up_childrens:hover, .managment_icon:hover, .insert_after_icon:hover, .insert_before_icon:hover, .link_to_icon:hover{outline-style: inset;}
+.navigation_elem {
+	display: inline-block; position: relative;
+	width: auto;vertical-align: middle;
+	padding: 8px 0;
+}
+.page_name, .page_alias{
+	display:inline-block;
+	width: 195px; 
+	padding-right: 3px;
+	border-right: 2px groove #009;
+	vertical-align: middle;
+}
+.page_alias {border-right:none; width: 198px;}
+
+#action_menu{
+	display: none; position: fixed;
+	width: 250px;
+	margin:2px; padding: 5px;
+	margin-left: -450px;
+	top:0%; left:50%;
+	outline:2px ridge #009;
+	background-color: #fff;
+	z-index:102;
+}
+#cancel_action {
+	display: block;
+	width: 120px;
+	margin: 3px auto; padding: 2px;
+	color:#333;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	border: 2px outset #900;
+	border-radius:7px;
+	background-color: #fff;
+	cursor: pointer;
+}
+#cancel_action:hover {
+	border-style:inset; border-color: #ff0;
+	background: #046 none;
+	color: #fff;
+}
+#overlay_content {
+	display: block; position: fixed;
+	width: 100%;
+	margin:0; padding:0;
+	top:0; left:0;
+	background: transparent url(../../../adminTemplate/style/images/cont_bg.png) left top repeat;
+	z-index: 101;
+}
+.action_menu_elem {
+	display: block; position: relative;
+	margin: 3px auto; padding: 3px 0;
+	text-align: center;
+	border-bottom:2px groove #009;
+	font:600 12px Verdana,Arial,Helvetica,sans-serif;
+	cursor: pointer;
+}
+.action_menu_elem:hover {color:#fff; background-color:#336;}
+
+.modal_form {
+	display: none; position: fixed; 
+	width: 596px; 
+	margin:2px; padding: 5px;
+	margin-left: -450px;
+	top:0; left: 50%;
+	border:2px ridge #009;
+	background-color: #fff;
+	z-index:102;
+}
+#main_content .modal_form p {font-size: 14px;text-indent: 0;}
+.modal_form .form_elem input[type="text"]{
+	display: block; position: relative;
+	width: 400px;
+	margin:0 0 5px; padding: 5px;
+	color: #333;
+	font-family:inherit;
+	font-size: 16px;
+	font-weight: 600;
+	border-color: #002560;
+	border-style: groove;
+	border-radius: 5px;
+	background: transparent url(../../contentEdit/design/images/cont_bg.png) left top repeat;
+}
+.modal_form .form_elem input[type="text"]:hover, .modal_form .form_elem input[type="text"]:focus{
+	border-style: ridge; background: #fff none;
+}
+.modal_form input[type="submit"]:hover {
+	border-style:inset; border-color: #ff0;
+	background: #046 none;
+	color: #fff;
+}
+.modal_form .form_elem input:focus {font-style: italic; color: #000;}
+.modal_form input[type="submit"]{
+	display: inline-block;
+	margin: 5px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	font-size: 18px;
+	border: 2px outset #900;
+	border-radius:7px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.modal_form .block_with_advice {
+	display: inline-block; position: absolute;
+	width: auto; height: auto;
+	right: 0%; top:0;
+	margin-right: 0px;
+	z-index: 105;
+}
+.modal_form .block_with_advice:hover {
+	width: 386px;
+	padding:5px;
+	border: 2px groove #004580;
+	border-radius: 10px;
+	background: #fff none;
+	z-index: 15;
+}
+.modal_form .block_with_advice:hover .advice {display:inline;}
+.modal_form .advice {
+	display: none;
+	color: #006;
+	font-size: 13px;
+	font-style: italic;
+
+}
+.modal_form .advice .redaction_advice{
+	color: #900;
+}
+.modal_form .advice .redaction_advice q {font-weight: 600; color: #000; font-style: normal;}
+.view_advice {
+	display: inline-block; float: right;
+	height: 30px; width: 30px;
+	border: 2px outset #999;
+	background: transparent url(../../contentEdit/design/images/question_but.png) center center no-repeat;
+	cursor: pointer;
+	z-index: 110;
+}
+.modal_form .view_advice:hover {
+	border-style: inset; border-color:#004580;
+}
+
+.modal_form .form_elem [class*="warning_"] {
+	font-size: 11px;
+	font-weight: 600;
+	color: #900;
+}
+
+#main_content .modal_form h2 {
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+#main_content .modal_form h3{
+	padding-left: 0px; font-size: 16px;
+}
+
+/*Ajax Request Settings*/
+#ajax_window {
+	display: block; position: fixed; overflow: hidden;
+	width: 600px;
+	margin:0 0 0 -300px;padding:10px;
+	top:0%; left: 50%;
+	color: #004580;
+	font: 16px Verdana,Arial,Helvetica,sans-serif;
+	border: 2px groove #009;
+	background: transparent url(../../../adminTemplate/style/images/cont_bg.png) left top repeat;
+	z-index: 120;
+}
+#ajax_overburden {
+	display: block; position: fixed;
+	width: 100%;
+	margin:0; padding:0;
+	top:0; left:0;
+	background: transparent url(../../../adminTemplate/style/images/cont_bg.png) left top repeat;
+	z-index: 110;
+}
+#ajax_close_button, .buttons_from_script {
+	display: block; float: right;
+	width:150px;
+	margin: 7px 15px 7px 0px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	border: 2px outset #009;
+	border-radius:7px;
+	background-color: #fff;
+	cursor: pointer;
+}
+#ajax_close_button:hover, .buttons_from_script:hover {
+	border-style:inset; border-color: #ff0;
+	background: #046 none;
+	color: #fff;
+}
+.error_class, .success_class {
+	display: block; font-weight: 600;
+}
+.error_class {color: #900;}
+.success_class {color: #090;}
+/*---*/

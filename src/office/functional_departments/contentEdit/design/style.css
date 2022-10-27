@@ -1,0 +1,92 @@
+.main_functions {
+	display: inline-block;
+	margin: 5px; padding: 5px;
+	color:#00174C;
+	text-decoration: none;
+	border: 2px outset #009;
+	border-radius:7px;
+	background-color: #fff;
+}
+.main_functions:hover {
+	border-style: inset; color: #660e01;
+}
+
+
+.inform_row {
+	display: block; position: relative; overflow: hidden;
+	width: auto;
+	margin: 15px auto;
+	text-align: center;
+}
+
+.element_cell {
+	position: relative;display: inline-block;
+	width: 250px;
+	margin:0 5px; padding: 5px;
+	border: 2px groove #009;
+	border-radius: 5px 0 5px 5px;
+	text-align: left;
+	font: 14px Verdana,Arial,Helvetica,sans-serif;
+	vertical-align: bottom;
+	background: transparent url(images/cont_bg.png) repeat;
+}
+.element_cell a{
+	color:#596601;
+}
+.element_cell a:hover {
+	text-decoration: none;
+}
+.element_string {
+	display: block;
+	width: 230px;
+	margin:4px 0;
+}
+.page_name {font-size: 16px; font-weight: 600; text-align: center;}
+.page_name em {border-bottom: 1px dotted #000;}
+.button_string {
+	position:absolute; display: inline-block; 
+	width: 17px;
+	margin: 0;
+	right: 0; top:0;
+}
+.managment_buttons {
+	display: inline-block;
+	width: 15px; height: 15px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	border: 2px outset #193d5f;
+	border-right: none;
+	cursor: pointer;
+}
+.managment_buttons:hover{border-style: inset;border-right: none;}
+ .managment_buttons.redact_datas:hover {border-top: none;}
+.redact_datas {
+	background:transparent url(images/redact_but.png) center center no-repeat;
+	border-top: none;
+}
+.remove_datas {
+	background:transparent url(images/delete_but.png) center center no-repeat;
+}
+/*Numeral Navigation*/
+.pages_navigation {
+	position: relative;
+	width:90%;
+	margin:40px auto 10px;padding:0;
+	text-align: left;
+}
+.pages_navigation.first_block {
+	text-align: right;
+}
+.pages_navigation a, .pages_navigation span{
+	position: relative; display: inline-block; 
+	padding:3px;
+	color: #00174C;
+	cursor: pointer;
+}
+.pages_navigation a:hover {
+	text-decoration: none;
+}
+.pages_navigation span {
+	color: #000;
+	cursor: default;
+}

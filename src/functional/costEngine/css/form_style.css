@@ -1,0 +1,170 @@
+.form_elem {text-align: left;position: relative;}
+.form_elem input, .form_elem textarea , .form_elem select, .form_elem textarea, .form_elem select {
+	display: block; position: relative;
+	width: 250px;
+	margin:0 0 5px; padding: 2px;
+	color: #333;
+	font-family:inherit;
+	font-size: 16px;
+	border-color: #333;
+	border-style: groove;
+	border-radius: 5px;
+}
+.form_elem textarea {width: 350px;height: 100px;}
+.form_elem select {height: auto;}
+.form_elem select option {
+	padding: 3px 0;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+input[type="submit"]{
+	display: inline-block;
+	margin: 5px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+.form_elem input:hover, .form_elem input:focus, .form_elem textarea:hover, .form_elem textarea:focus, .form_elem select:hover{
+	border-style: ridge; background: #ddd none;
+}
+input[type="submit"]:hover {
+	border-style:inset; border-color: #fff;
+	background: #333 none;
+	color: #fff;
+}
+.form_elem input:focus,.form_elem textarea:focus {font-style: italic; color: #000;}
+
+#cost_engine_block p.field_header {
+	width: 250px;
+	text-indent: 0;
+	font-size:18px; font-weight: normal;
+	line-height:100%;
+	margin-bottom:0;
+}
+.red_star {
+	color: #900; font-weight: bold;
+}
+.form_elem [class*="warning_"], .form_elem [class*="_warning"]{
+	font-size: 11px;
+	font-weight: 600;
+	color: #900;
+}
+.form_elem input[type="radio"], .form_elem input[type='checkbox'] {
+	display: inline-block;
+	width: auto;
+	margin-left: 30px;margin-top: 10px;
+	cursor: pointer;
+}
+.form_elem label {
+	display: inline-block;
+	margin-left: 10px;
+	font-size:18px;
+	cursor: pointer;
+}
+.form_elem label:hover {
+	border-bottom: 1px dotted #333;
+}
+/*Advices*/
+.block_with_advice {
+	display: inline-block; position: absolute;
+	width: auto; height: auto;
+	left: 0%;
+	margin-left: 250px;
+	z-index: 5;
+}
+.block_with_advice:hover {
+	width: 250px;
+	margin-left: 0;padding:5px;
+	border: 2px groove #333;
+	border-radius: 5px;
+	background: #fff none;
+	z-index: 15;
+}
+.block_with_advice:hover .advice {display:inline;}
+.advice {
+	display: none;
+	color: #333;
+	font-size: 13px;
+	font-style: italic;
+
+}
+.advice .redaction_advice{
+	color: #900;
+}
+.advice .redaction_advice q {font-weight: 600; color: #000; font-style: normal;}
+.view_advice {
+	display: inline-block; float: right;
+	font-size: 18px;
+	border: 2px outset #999;
+	padding: 1px 3px;
+	cursor: pointer;
+	z-index: 10;
+}
+.view_advice:hover {
+	border-style: inset; border-color:#004580;
+}
+.block_with_advice:hover  .view_advice {
+	margin: -7px -7px auto auto;
+}
+/*Costing*/
+p#total_value {
+	border-top: 1px solid #333;
+	color: #333;
+	font-size: 16px;
+	font-weight:700;
+}
+#current_value_viewer {
+	position: absolute;
+	margin-top:5px; margin-left: 280px;
+	font-size: 16px;
+	padding: 2px;
+	color: #fff;
+	background-color: #333;
+	border-radius: 5px;
+	border: none;
+}
+/*Ajax*/
+#ajax_window {
+	display: block; position: fixed; overflow: hidden;
+	width: 600px;
+	margin:0 0 0 -300px;padding:10px;
+	top:0%; left: 50%;
+	color: #004580;
+	font: 14px Arial,Helvetica,sans-serif;
+	border: 2px groove #333;
+	background: transparent url(../images/cont_bg.png) left top repeat;
+	z-index: 120;
+}
+#ajax_overburden {
+	display: block; position: fixed;
+	width: 100%;
+	margin:0; padding:0;
+	top:0; left:0;
+	background: transparent url(../images/cont_bg.png) left top repeat;
+	z-index: 110;
+}
+#ajax_close_button, .buttons_from_script {
+	display: block; float: right;
+	width:150px;
+	margin: 7px 15px 7px 0px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+	border: 2px outset #333;
+	background-color: #fff;
+	cursor: pointer;
+}
+#ajax_close_button:hover, .buttons_from_script:hover {
+	border-style:inset; border-color: #000;
+	background: #333 none;
+	color: #fff;
+}
+.error_class, .success_class {
+	display: block; font-weight: 600;
+}
+.error_class {color: #900;}
+.success_class {color: #090;}
+

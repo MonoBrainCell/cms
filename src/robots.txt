@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /office
+Disallow: /content
+Disallow: /workspace
+Disallow: /*.fbd
+
+Host: domen.ru
+Sitemap: http://domen.ru/sitemap.xml

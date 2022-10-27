@@ -1,0 +1,122 @@
+/*CSS-настройки редактирования страницы*/
+.form_elem input, .form_elem textarea , .form_elem select {
+	display: block; position: relative;
+	width: 400px;
+	margin:0 0 5px; padding: 5px;
+	color: #333;
+	font-family:inherit;
+	font-size: 16px;
+	font-weight: 600;
+	border-color: #002560;
+	border-style: groove;
+	border-radius: 5px;
+	background: transparent url(images/cont_bg.png) left top repeat;
+}
+.form_elem textarea, .form_elem select { 
+	width: 700px; height: 350px;
+	margin: 0 auto 5px;
+}
+.form_elem textarea {width: 650px;}
+.form_elem select {height: auto;}
+.form_elem select option {
+	padding: 3px 0;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+input[type="submit"], #view_available_images{
+	display: inline-block;
+	margin: 5px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	font-size: 18px;
+	border: 2px outset #900;
+	border-radius:7px;
+	background-color: #fff;
+	cursor: pointer;
+}
+#view_available_images {
+	position: absolute;
+	width: 150px; right:0;
+	margin: 40px 0;
+	text-align: center;
+	font-size: 14px;
+}
+.form_elem input:hover, .form_elem input:focus, .form_elem textarea:hover, .form_elem textarea:focus, .form_elem select:hover, #view_available_images:hover{
+	border-style: ridge; background: #fff none;
+}
+input[type="submit"]:hover {
+	border-style:inset; border-color: #ff0;
+	background: #046 none;
+	color: #fff;
+}
+.form_elem select option:hover {background-color: #cfc;}
+.form_elem input:focus,.form_elem textarea:focus {font-style: italic; color: #000;}
+
+.block_with_advice {
+	display: inline-block; position: absolute;
+	width: auto; height: auto;
+	right: 0%;
+	margin-right: 420px;
+	z-index: 5;
+}
+.left_block .block_with_advice, .right_block .block_with_advice {margin-right:0;}
+.block_with_advice:hover {
+	width: 386px;
+	padding:5px;
+	border: 2px groove #004580;
+	border-radius: 10px;
+	background: #fff none;
+	z-index: 15;
+}
+.block_with_advice:hover .advice {display:inline;}
+.advice {
+	display: none;
+	color: #006;
+	font-size: 13px;
+	font-style: italic;
+
+}
+.advice .redaction_advice{
+	color: #900;
+}
+.advice .redaction_advice q {font-weight: 600; color: #000; font-style: normal;}
+.view_advice {
+	display: inline-block; float: right;
+	height: 30px; width: 30px;
+	border: 2px outset #999;
+	background: transparent url(images/question_but.png) center center no-repeat;
+	cursor: pointer;
+	z-index: 10;
+}
+.view_advice:hover {
+	border-style: inset; border-color:#004580;
+}
+
+.form_elem [class*="warning_"] {
+	font-size: 11px;
+	font-weight: 600;
+	color: #900;
+}
+
+.main_field:after {
+	content:" *";
+	color: #900;
+}
+
+.left_block, .right_block {
+	float: left; position: relative;
+	width: 400px;
+}
+.right_block {margin-left: 40px;}
+.left_block input, .right_block input {width: 340px;}
+#main_content .left_block h2, #main_content .right_block h2 {
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+#main_content .left_block h3, #main_content .right_block h3 {
+	padding-left: 0px; font-size: 16px;
+}
+
+

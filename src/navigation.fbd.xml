@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigation>
+  <page alias="start" name="0" enclave="0"/>
+  <main/>
+  <advanced/>
+</navigation>

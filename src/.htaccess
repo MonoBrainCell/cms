@@ -1,0 +1,30 @@
+DirectoryIndex index.php
+Options -Indexes
+AddDefaultCharset utf-8
+
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^\/guestbook\.php$ [NC]
+RewriteCond %{QUERY_STRING} !(gId) [NC]
+RewriteRule ^guestbook\.php\?! guestbook.php?gId=1 [L,R=permanent]
+
+RewriteCond %{REQUEST_URI} ^\/news\.php$ [NC]
+RewriteCond %{QUERY_STRING} !(gId) [NC]
+RewriteCond %{QUERY_STRING} !(article) [NC]
+RewriteRule ^news\.php news.php?gId=1 [L,R=permanent]
+
+RewriteCond %{REQUEST_URI} ^\/page\/ [NC]
+RewriteRule ^page\/(.*) index.php?pid=$1 [L]
+
+RewriteRule ^.htaccess$ - [F]
+
+<FilesMatch "\.fbd">
+Order Deny,Allow
+Deny from all
+</FilesMatch>
+
+php_value post_max_size 52M
+php_value upload_max_filesize 5M
+php_flag zlib.output_compression On

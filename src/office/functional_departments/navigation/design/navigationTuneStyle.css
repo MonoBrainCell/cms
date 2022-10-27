@@ -1,0 +1,86 @@
+#main_content h2 {
+	border-top: 2px groove #009;
+	padding-top: 10px;
+}
+.pay_attention {
+	text-transform: uppercase;
+	color: #900;
+}
+.variable_name {color: #009; font-weight: 700;}
+textarea {
+	display: block; position: relative;
+	width: 600px; height: 80px;
+	margin: 0 5px;padding: 5px;
+	color: #333;
+	font-family:inherit;
+	font-size: 16px;
+	font-weight: 600;
+	border-color: #002560;
+	border-style: groove;
+	border-radius: 5px;
+	background: transparent url(../../contentEdit/design/images/cont_bg.png) left top repeat;
+}
+input[type="submit"]{
+	display: inline-block;
+	margin: 5px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	font-size: 18px;
+	border: 2px outset #900;
+	border-radius:7px;
+	background-color: #fff;
+	cursor: pointer;
+}
+textarea:hover, textarea:focus{
+	border-style: ridge; background: #fff none;
+}
+input[type="submit"]:hover {
+	border-style:inset; border-color: #ff0;
+	background: #046 none;
+	color: #fff;
+}
+textarea:focus {font-style: italic; color: #000;}
+/*Ajax Request Settings*/
+#ajax_window {
+	display: block; position: fixed; overflow: hidden;
+	width: 600px;
+	margin:0 0 0 -300px;padding:10px;
+	top:0%; left: 50%;
+	color: #004580;
+	font: 16px Verdana,Arial,Helvetica,sans-serif;
+	border: 2px groove #009;
+	background: transparent url(../../../adminTemplate/style/images/cont_bg.png) left top repeat;
+	z-index: 120;
+}
+#ajax_overburden {
+	display: block; position: fixed;
+	width: 100%;
+	margin:0; padding:0;
+	top:0; left:0;
+	background: transparent url(../../../adminTemplate/style/images/cont_bg.png) left top repeat;
+	z-index: 110;
+}
+#ajax_close_button, .buttons_from_script {
+	display: block; float: right;
+	width:150px;
+	margin: 7px 15px 7px 0px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	border: 2px outset #009;
+	border-radius:7px;
+	background-color: #fff;
+	cursor: pointer;
+}
+#ajax_close_button:hover, .buttons_from_script:hover {
+	border-style:inset; border-color: #ff0;
+	background: #046 none;
+	color: #fff;
+}
+.error_class, .success_class {
+	display: block; font-weight: 600;
+}
+.error_class {color: #900;}
+.success_class {color: #090;}
+/*---*/

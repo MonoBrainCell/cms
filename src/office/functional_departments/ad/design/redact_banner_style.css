@@ -1,0 +1,142 @@
+/*CSS-настройки редактирования страницы*/
+.form_elem input, .form_elem textarea , .form_elem select {
+	display: block; position: relative;
+	width: 400px;
+	margin:0 0 5px; padding: 5px;
+	color: #333;
+	font-family:inherit;
+	font-size: 16px;
+	font-weight: 600;
+	border-color: #002560;
+	border-style: groove;
+	border-radius: 5px;
+	background: transparent url(../../contentEdit/design/images/cont_bg.png) left top repeat;
+}
+.form_elem textarea, .form_elem select { 
+	width: 700px; height: 350px;
+	margin: 0 auto 5px;
+}
+.form_elem textarea {width: 650px;}
+.form_elem select {height: auto;}
+.form_elem select option {
+	padding: 3px 0;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+input[type="submit"], #view_available_images,#view_available_flashes,#view_available_pages{
+	display: inline-block;
+	margin: 5px; padding: 5px;
+	color:#333;
+	text-decoration: none;
+	font-size: 18px;
+	border: 2px outset #900;
+	border-radius:7px;
+	background-color: #fff;
+	cursor: pointer;
+}
+#view_available_images,#view_available_flashes,#view_available_pages {
+	position: absolute;
+	width: 150px; right:0;
+	margin: 40px 0;
+	text-align: center;
+	font-size: 14px;
+}
+#view_available_images {margin-top: 120px;margin-right:180px;}
+#view_available_pages {margin-right:180px;}
+.form_elem input:hover, .form_elem input:focus, .form_elem textarea:hover, .form_elem textarea:focus, .form_elem select:hover, #view_available_images:hover, #view_available_flashes:hover, #view_available_pages:hover{
+	border-style: ridge; background: #fff none;
+}
+input[type="submit"]:hover {
+	border-style:inset; border-color: #ff0;
+	background: #046 none;
+	color: #fff;
+}
+.form_elem select option:hover {background-color: #cfc;}
+.form_elem input:focus,.form_elem textarea:focus {font-style: italic; color: #000;}
+
+.block_with_advice {
+	display: inline-block; position: absolute;
+	width: auto; height: auto;
+	right: 0%;
+	margin-right: 420px;
+	z-index: 5;
+}
+.left_block .block_with_advice, .right_block .block_with_advice {margin-right:0;}
+.block_with_advice:hover {
+	width: 386px;
+	padding:5px;
+	border: 2px groove #004580;
+	border-radius: 10px;
+	background: #fff none;
+	z-index: 15;
+}
+.block_with_advice:hover .advice {display:inline;}
+.advice {
+	display: none;
+	color: #006;
+	font-size: 13px;
+	font-style: italic;
+
+}
+.advice .redaction_advice{
+	color: #900;
+}
+.advice .redaction_advice q {font-weight: 600; color: #000; font-style: normal;}
+.view_advice {
+	display: inline-block; float: right;
+	height: 30px; width: 30px;
+	border: 2px outset #999;
+	background: transparent url(../../contentEdit/design/images/question_but.png) center center no-repeat;
+	cursor: pointer;
+	z-index: 10;
+}
+.view_advice:hover {
+	border-style: inset; border-color:#004580;
+}
+
+.form_elem [class*="warning_"] {
+	font-size: 11px;
+	font-weight: 600;
+	color: #900;
+}
+
+.main_field:after {
+	content:" *";
+	color: #900;
+}
+/*Corrections*/
+#redaction_dialog.form_elem {
+	padding: 5px 0 20px;
+}
+#redaction_dialog.form_elem input[type="radio"] {
+	display: inline-block;
+	width: auto;
+	margin-left: 30px;
+	cursor: pointer;
+}
+#redaction_dialog.form_elem input#constructor {margin-left: 20px;}
+#redaction_dialog.form_elem label {
+	display: inline-block;
+	margin-left: 5px;
+	cursor: pointer;
+}
+#redaction_dialog.form_elem label:hover {
+	border-bottom: 1px dotted #333;
+}
+
+#main_content fieldset {
+	border-color: #002560;
+	border-style: groove;
+	border-radius: 5px;
+}
+#main_content fieldset legend {
+	padding:5px;
+	text-align: left;
+	color: #004580;
+	font:22px Verdana,Arial,Helvetica,sans-serif;
+	border: 2px groove #002560;
+	border-radius: 8px;
+	background-color: #fff;
+}
+#main_content fieldset .block_with_advice {margin-right: 410px;}

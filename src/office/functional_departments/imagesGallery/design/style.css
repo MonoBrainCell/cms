@@ -1,0 +1,107 @@
+#gallery_redact_block {
+	position: relative;
+	width: 870px;
+	margin:30px auto 10px; padding:0 2px 2px;
+	border:3px ridge #666;
+}
+#main_content .form_elem input[type="radio"]{
+	display: inline-block;
+	width: auto;
+}
+#main_content label {margin-left: 3px; margin-right: 10px;}
+
+.gallery_element {
+	position: relative;
+	margin:10px auto; padding:0 2px 2px;
+	border:3px groove #666;
+	text-align: center;
+}
+.gallery_element:first-child {margin-top:0;}
+#main_content .gallery_element h3 {
+	width: auto;
+	margin-top:0; margin-bottom:0; padding:5px;
+	text-align: center;
+	font-size: 16px;
+	border: 2px ridge #666;
+	border-top: none;
+	background:url(../../contentEdit/design/images/cont_bg.png) repeat left top transparent;
+}
+#main_content .gallery_element input[type="text"] {
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 7px 2px;
+	text-align: center;
+	border-radius:0 0 5px 5px;
+}
+#main_content .gallery_element .block_with_advice {
+	margin-right:150px;
+}
+
+#main_content .preview_image, #main_content .original_image {
+	position: relative; float: left;
+	width:390px;
+	margin:40px auto 0;padding: 3px; 
+	border: 2px ridge #666;
+	background:url(../../contentEdit/design/images/cont_bg.png) repeat left top transparent;
+}
+
+#main_content .original_image {float: right;}
+
+#main_content .gallery_element a {
+	display:none;position: relative; overflow: hidden;
+	width:auto;
+	margin:0 auto 5px; padding: 2px;
+	font-size:14px;
+	border-bottom: 1px dotted #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+#main_content .gallery_element a[data-gallery]{
+	display: block;
+}
+#main_content .gallery_element a:hover {border-bottom-color: #900;}
+#main_content .gallery_element .manipulate_buttons{
+	display: inline-block; position: relative;
+	width: 15px; height: 15px;
+	text-decoration: none;
+	border-width: 2px;
+	border-style: outset;
+	border-color:#193D5F;
+	cursor: pointer;
+}
+#main_content .gallery_element .manipulate_buttons:hover {
+	border-style: inset;
+}
+#main_content .gallery_element .manipulate_buttons.remove_button {
+	background:url(../../contentEdit/design/images/delete_but.png) no-repeat center center transparent;
+}
+#main_content .gallery_element .manipulate_buttons.add_change_button {
+	width: 50px;
+	background:url(images/add_change_but.png) no-repeat center center transparent;
+}
+#main_content .gallery_element .replace_button {
+	display: inline-block; position: absolute;
+	width:20px; height: 20px;
+	top:0; right:0;
+	margin-top:40px;margin-right: 10px;
+	outline:2px outset #009;
+	background:url(../../navigation/design/images/context_menu_button.png) no-repeat center center transparent;
+	cursor: pointer;
+}
+#main_content .gallery_element .replace_button:hover {outline-style:inset;}
+#main_content .gallery_element .replace_button.after_this {
+	background:url(../../navigation/design/images/insert_after_button.png) no-repeat center center transparent;
+}
+#main_content .gallery_element .replace_button.before_this {
+	background:url(../../navigation/design/images/insert_before_button.png) no-repeat center center transparent;
+}
+#more_images {
+	position: relative;
+	margin:10px auto 0; padding: 5px;
+	font-size:16px;font-weight: 700;
+	text-align: center;
+	border:3px outset #009;
+	background:url(../../contentEdit/design/images/cont_bg.png) repeat left top transparent;
+	cursor: pointer;
+}
+#more_images:hover {border-style: inset;color: #900;font-size: 18px;}
