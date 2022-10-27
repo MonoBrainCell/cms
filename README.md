@@ -2,6 +2,7 @@
 <ul>
     <li><a href="#languages_in_cms_info">Что использовано в CMS?</a></li>
     <li><a href="#few_words_from_developer">Пара слов о CMS от её разработчика</a></li>
+    <li><a href="#files_structure_info">Структура CMS</a></li>
 </ul>
 <h2 id="languages_in_cms_info">Что использовано в CMS?</h2>
 <ol>
@@ -134,8 +135,52 @@
                     <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/information_base/domain.txt" target="_blank">domain.txt</a> - файл, хранящий текущее доменное имя сайта (в случае его смены произойдёт автоматическое исправление содержания карты сайта и самого этого файла, с учётом нового домена)</li>
                 </ul>
             </li>
-             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/jq_libs" target="_blank">jq_libs/</a> - папка содержащая, используемую в админ. части библиотеку jQuery</li>
-             <li><a href="#" target="_blank">.../</a> - ...</li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/jq_libs" target="_blank">jq_libs/</a> - папка содержащая, используемую в админ. части библиотеку jQuery
+             </li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/specials" target="_blank">specials/</a> - папка, содержащая ядро админ. части CMS
+                <ul>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/specials/form_to_enter.php" target="_blank">form_to_enter.php</a> - файл, участвующий в формировании формы входа в админ. часть CMS</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/specials/pageOutput.php" target="_blank">pageOutput.php</a> - файл, используемый для подготовки и вывода всех страниц управления функционалом в админ. части</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/specials/unescaped_file.php" target="_blank">unescaped_file.php</a> - файл, содержащий некоторые доп. элементы, используемые в админ. части CMS(например, реализация автоподгрузки классов, обработчик ошибок, получение данных из GET)</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/specials/jss" target="_blank">jss/</a> - папка, содержащая js-файлы, используемые на любой странице админ. части CMS
+                        <ul>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/specials/jss/attachElemToWindow.plugin.js" target="_blank">attachElemToWindow.plugin.js</a> - js, управляющий прикреплением элементов разметки в момент прокрутки страницы</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/specials/jss/fields_manager.js" target="_blank">fields_manager.js</a> - js, управляющий проверкой полей формы авторизации в админ.части</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/specials/jss/navigation_manager.js" target="_blank">navigation_manager.js</a> - js, управляющий поведением навигации</li>
+                        </ul>
+                    </li>
+                </ul>
+             </li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/subsidiary" target="_blank">subsidiary/</a> - папка, содержащая файлы, используемые в качестве поддержки процесса управления функционалом в админ. части CMS
+                <ul>
+                    <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/subsidiary/js" target="_blank">js/</a> - папка, содержащая js-файлы
+                        <ul>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/js/attachEventsToBoxOfFiles.func.js" target="_blank">attachEventsToBoxOfFiles.func.js</a> - js, содержащий функции, используемые для добавления и отслеживания событий к модальному окну выбора файлов</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/js/collectFormElems.func.js" target="_blank">collectFormElems.func.js</a> - js, содержащий функции, используемые для работы с элементами формы</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/js/fullControlElements.func.js" target="_blank">fullControlElements.func.js</a> - js, содержащий функции, используемые для реализации функционала отдельных панелей управления на страницах админ. части (например, панель позволяющая управлять элементом навигации(изменять положение относительно других, назначать род. элемент и т.д.))</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/js/galleryControl.func.js" target="_blank">galleryControl.func.js</a> - js, содержащий функции, используемые для управления редактором галерей изображений</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/js/sendAjaxRqst.func.js" target="_blank">sendAjaxRqst.func.js</a> - js, содержащий функции, используемые для осуществления ajax-запросов в рамках админ. части CMS</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/js/textFieldsManager.plugin.js" target="_blank">sendAjaxRqst.func.js</a> - js, для полной проверки полей формы страниц админ. части</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/subsidiary/js/tiny_mce" target="_blank">tiny_mce/</a> - папка с реализацией WYSIWYG-редактора TinyMCE</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/subsidiary/php" target="_blank">php/</a> - папка, содержащая php-файлы
+                        <ul>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/php/baseTagGen.php" target="_blank">baseTagGen.php</a> - генератор тега &lt;base&gt; для админ. части</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/php/listOfFiles.php" target="_blank">listOfFiles.php</a> - файл, используемые для формирования списка файлов для модальных окон выбора файлов, при редактировании в админ. части</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/php/listOfPages.php" target="_blank">listOfPages.php</a> - файл, используемые для формирования списка страниц для модальных окон выбора страниц сайта, при редактировании в админ. части</li>
+                            <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/subsidiary/php/tinymceImagesList.php" target="_blank">tinymceImagesList.php</a> - файл, используемые для формирования списка изображений, используемых для добавления в контент страниц (для редактора TinyMCE)</li>
+                        </ul>
+                    </li>
+                </ul>
+             </li>
+             <li><a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/workspace" target="_blank">workspace/</a> - папка, содержащая файлы, используемые при работе во время авторизации в админ. части пользователей, а также при проверке действий уже авторизовавшихся пользователей
+                <ul>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/workspace/Gatekeeper.php" target="_blank">Gatekeeper.php</a> - файл, используемый, в качестве распорядителя в процессе мониторинга пользователей и авторизации (проверка уровня доступа, проверка метки авторизации, переадресация на страницу входа в адми. и т.п.)</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/workspace/MasterEncryption.php" target="_blank">MasterEncryption.php</a> - файл, используемый, в качестве управляющего процесса шифрования/дешифрования авторизационных данных</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/workspace/SafeguardMaster.php" target="_blank">SafeguardMaster.php</a> - файл, используемый для непосредственной проверки данных</li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ul>
