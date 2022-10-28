@@ -1,4 +1,4 @@
-<h1>Система управления контентом сайта или просто CMS</h1>
+<h1>:floppy_disk::robot::floppy_disk:Система управления контентом сайта или просто CMS</h1>
 <ul>
     <li><a href="#languages_in_cms_info">Что использовано в CMS?</a></li>
     <li><a href="#few_words_from_developer">Пара слов о CMS от её разработчика</a></li>
