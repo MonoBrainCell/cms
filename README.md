@@ -6,6 +6,7 @@
     <li><a href="#principles_of_operation_of_cms">Принципы работы CMS</a>
         <ul>
             <li><a href="#front_part_of_cms">&quot;Лицевая&quot; часть CMS</a></li>
+            <li><a href="#back_part_of_cms">Административная часть CMS</a></li>
         </ul>
     </li>
 </ul>
@@ -208,5 +209,26 @@
                 </ul>
             </li>
         <ol>
+    </li>
+</ul>
+<h3 id="back_part_of_cms">Административная часть CMS (управление контентом)</h3>
+<ul>
+    <li>Доступ к административной части
+        <ul>
+            <li>Осуществляется через указание логина и пароля пользователя и проверки их на соответствие существующей информации (логины и пароли хранятся в <a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/gatekeeper/users.fbd.xml" target="_blank">office/gatekeeper/users.fbd.xml</a>)</li>
+            <li>Реализация страницы входа и проверки данных осуществляется при помощи файла <a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/gatekeeper/users.fbd.xml" target="_blank">office/enter.php</a></li>
+            <li>За осуществление полноценной проверки и подтверждения авторизации отвечают классы, файлы которых хранятся в <a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/workspace" target="_blank">office/workspace/</a></li>
+        </ul>
+    </li>
+    <li>Управление контентом
+        <ul>
+            <li>Управление отдельными частями контента CMS осуществляется отдельными фунциональными группами (см. папки внутри <a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/functional_departments" target="_blank">office/functional_departments/</a>)</li>
+            <li>Внутри каждой функциональной группы имеется &quot;корневой&quot; php-файл, который отвечает за формирование страницы с полным списком доступных действий для редактирования контента
+            </li>
+            <li>Файлы, формирующие страницы с редакторами различных элементов целевой части контента располагаются в папке <strong>ramification/</strong></li>
+            <li>Каждый из вышеперечисленных файлов действует следующим образом: внутри него подключается файл с настройками, определяющими как необходимо сформировать страницу, в т.ч. и какие классы использовать для формирования редакционной части (данные классы расположены в отдельных файлах в папке <strong>augmentation</strong>), данные настройки передаются объекту класса отвечающего за формирование разметки всех страниц админ. части (<a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/specials/pageOutput.php" target="_blank">Spl__pageOutput</a>)</li>
+            <li>Сохранение внесённых изменений осуществляется при помощи ajax-запросов, отправляемых в единый php-обработчик ajax-запросов для админ. части(<a href="https://github.com/MonoBrainCell/cms/blob/main/src/office/execAjaxRqst.php" target="_blank">office/execAjaxRqst.php</a>), который в свою очередь подключит для обработки запроса целевой исполнительный файл, соответствующий части контента и действию над ним (см. папку <strong>executors</strong>, внутри папок функциональных групп)</li>
+            <li>В отдельных случаях редактирования конетнта требуются дополнительные данные или манипуляции, такие элементы подключаются из папки <a href="https://github.com/MonoBrainCell/cms/tree/main/src/office/subsidiary" target="_blank">office/subsidiary</a></li>
+        </ul>
     </li>
 </ul>
