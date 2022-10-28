@@ -11,6 +11,18 @@
     </li>
     <li><a href="#cms_functional_list">Функционал CMS</a></li>
     <li><a href="#install_and_access_to_admin_part">Установка CMS и доступ в админ. часть</a></li>
+    <li><a href="#cms_demos">Демонстрация работы CMS</a>
+        <ul>
+            <li><a href="#theme_change_demo">Демонстрация изменения темы</a></li>
+            <li><a href="#add_page_demo">Демонстрация добавления страницы</a></li>
+            <li><a href="#navigation_manipulation_demo">Демонстрация управления элементами навигации</a></li>
+            <li><a href="#ad_manage_demo">Демонстрация управления рекламными материалами</a></li>
+            <li><a href="#add_widgets_demo">Демонстрация добавления виджетов</a></li>
+            <li><a href="#add_images_gallery_demo">Демонстрация создания галереи изображений</a></li>
+            <li><a href="#feedback_demo">Демонстрация использования формы обратной связи</a></li>
+            <li><a href="#news_func_demo">Демонстрация работы новостного блока</a></li>
+        </ul>
+    </li>
 </ul>
 <h2 id="languages_in_cms_info">Что использовано в CMS?</h2>
 <ol>
@@ -344,3 +356,53 @@
     <strong>Пароль:</strong> permit
     </li>
 </ul>
+<h2 id="cms_demos">Демонстрация работы CMS</h2>
+<p><b>Обращаю Ваше внимание, на тот факт, что продолжительность отдельных демонстраций достигает 2-3 минут.</b></p>
+<h3 id="theme_change_demo">Демонстрация изменения темы</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/design_change.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/design_change.gif" alt="изменение темы">
+    </a>
+</div>
+<h3 id="add_page_demo">Демонстрация добавления страницы</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/add_page.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/add_page.gif" alt="добавление страницы">
+    </a>
+</div>
+<h3 id="navigation_manipulation_demo">Демонстрация управления элементами навигации</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/navigation_manipulation.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/navigation_manipulation.gif" alt="управление элементами навигации">
+    </a>
+</div>
+<h3 id="ad_manage_demo">Демонстрация управления рекламными материалами</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/banners_work.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/banners_work.gif" alt="управление рекламными материалами">
+    </a>
+</div>
+<h3 id="add_widgets_demo">Демонстрация добавления виджетов</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/widgets_manage.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/widgets_manage.gif" alt="добавление виджетов">
+    </a>
+</div>
+<h3 id="add_images_gallery_demo">Демонстрация создания галереи изображений</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/create_images_gallery.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/create_images_gallery.gif" alt="создание галереи изображений">
+    </a>
+</div>
+<h3 id="feedback_demo">Демонстрация использования формы обратной связи</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/work_with_feedback.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/work_with_feedback.gif" alt="использование формы обратной связи">
+    </a>
+</div>
+<h3 id="news_func_demo">Демонстрация работы новостного блока</h3>
+<div>
+    <a href="https://github.com/MonoBrainCell/cms/blob/main/demo_images/manage_news.gif" title="кликните для просмотра в оригинальном размере">
+        <img src="demo_images/manage_news.gif" alt="новостной блок">
+    </a>
+</div>
