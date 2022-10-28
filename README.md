@@ -3,6 +3,11 @@
     <li><a href="#languages_in_cms_info">Что использовано в CMS?</a></li>
     <li><a href="#few_words_from_developer">Пара слов о CMS от её разработчика</a></li>
     <li><a href="#files_structure_info">Структура CMS</a></li>
+    <li><a href="#principles_of_operation_of_cms">Принципы работы CMS</a>
+        <ul>
+            <li><a href="#front_part_of_cms">&quot;Лицевая&quot; часть CMS</a></li>
+        </ul>
+    </li>
 </ul>
 <h2 id="languages_in_cms_info">Что использовано в CMS?</h2>
 <ol>
@@ -182,5 +187,26 @@
                 </ul>
             </li>
         </ul>
+    </li>
+</ul>
+<h2 id="principles_of_operation_of_cms">Принципы работы CMS</h2>
+<h3 id="front_part_of_cms">&quot;Лицевая&quot; часть CMS (генерирование страниц)</h3>
+<ul>
+    <li>Контент и оформление генерируемых страниц хранятся раздельно (контент: папка <a href="https://github.com/MonoBrainCell/cms/blob/main/src/content" target="_blank">content</a>, оформление: папка <a href="https://github.com/MonoBrainCell/cms/blob/main/src/design" target="_blank">design</a>)</li>
+    <li>В процессе генерирования страницы происходит слияние разметки, соответствующей активной теме, с контентом запрашиваемой страницы</li>
+    <li>Слияние происходит на основе использования функциональных меток, указанных в разметке темы (например, <strong>{_TITLE_}</strong> будет заменена на имя страницы; <strong>{_HEADER_1_}</strong> будет заменена на основной заголовок страницы и т.п.)</li>
+    <li>Формирование финальных частей контента, которые будут заменять функциональные метки происходит при помощи отдельных функциональных элементов CMS (папка <a href="https://github.com/MonoBrainCell/cms/tree/main/src/functional" target="_blank">functional</a>)</li>
+    <li>Каждый функциональный элемент CMS представлен в виде отдельного класса, содержащего определённые методы, которые и вызываются генератором страниц для формирования полноценного контента</li>
+    <li>При генерировании контента, CMS определяет набор используемых функциональных элементов и их методов, исходя из их полного списка, хранящегося в файле настроек CMS(<a href="https://github.com/MonoBrainCell/cms/blob/main/src/settings.fbd.php" target="_blank">settings.fbd.php</a>); также в этом списке хранится информация о том является ли тот или иной метод функционала активным, т.е. будет ли он вызываться в процессе генерирования контента</li>
+    <li>В рамках CMS существует 2 типа страниц:
+        <ol>
+            <li>обычные страницы - генерирование которых происходит стандартными средствами CMS (файл <a href="https://github.com/MonoBrainCell/cms/blob/main/src/index.php" target="_blank">index.php</a>)</li>
+            <li>страницы &quot;анклавы&quot; - генерирование таких страниц осуществляется отдельными файлами, но в рамках функционала и настроек самой CMS
+                <ol>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/news.php" target="_blank">news.php</a> - новостной блок CMS</li>
+                    <li><a href="https://github.com/MonoBrainCell/cms/blob/main/src/guestbook.php" target="_blank">guestbook.php</a> - страница отзывов</li>
+                </ol>
+            </li>
+        <ol>
     </li>
 </ul>
